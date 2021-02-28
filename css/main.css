@@ -84,6 +84,10 @@ img {
   }
 }
 
+.text-accent {
+  color: #ff6b09;
+}
+
 .empty {
   height: 20px;
 }
