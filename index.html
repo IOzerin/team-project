@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.min.css">
+        <title>HellEN</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <span class="first-lane">
+                        Hell
+                        <svg>
+                            <use href="./images/sprite.svg#fire"></use>
+                        </svg>
+                        EN
+                    </span>
+                    <span class="second-lane">
+                        <span>Адский</span> английский
+                    </span>
+                </div>
+                <nav>
+                    <ul class="navigation-links-list">
+                        <li><a href="#" class="navigation-link">Программа обучения</a></li>
+                        <li><a href="#about" class="navigation-link">О нас</a></li>
+                        <li><a href="#" class="navigation-link">Варианты обучения</a></li>
+                        <li><a href="#" class="navigation-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <button type="button" class="consultation-button">Консультация по телефону</button>
+                    <button type="button" class="open-modal-btn" id="mobile-menu-btn">
+                        <svg width="21" height="18">
+                            <use href="./images/sprite.svg#menu"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- MOBILE MENU -->
+            <div class="modal modal-mobile-menu" id="mobile-menu">
+                <div class="container mobile-menu-container">
+                    <div class="mobile-menu-header">
+                        <div class="logo mobile-menu-logo">
+                            <span class="first-lane">
+                                Hell
+                                <svg width="13.93" height="19.38">
+                                    <use href="./images/sprite.svg#fire"></use>
+                                </svg>
+                                EN
+                            </span>
+                            <span class="second-lane">
+                                <span>Адский</span> английский
+                            </span>
+                        </div>
+                        <button type="button" class="modal-close-btn">
+                            <svg width="15" height="15">
+                                <use href="./images/sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="mobile-menu-items">
+                        <ul>
+                            <li><a href="#" class="mobile-menu-item">Программа обучения</a></li>
+                            <li><a href="#about" class="mobile-menu-item">О нас</a></li>
+                            <li><a href="#" class="mobile-menu-item">Варианты обучения</a></li>
+                            <li><a href="#" class="mobile-menu-item">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button type="button" class="consultation-button">Консультация по телефону</button>
+                </div>
+            </div>
+            <!-- / MOBILE MENU -->
+        </header>
+        <main>
+            <section class="empty"><h2>Hero</h2></section>
+            <section class="empty"><h2>Advantages</h2></section>
+            <section class="empty"><h2>Problems</h2></section>
+            <section class="empty"><h2>How we do</h2></section>
+            <section class="empty"><h2>Program</h2></section>
+            <section class="empty"><h2>Benefits</h2></section>
+            <section class="about-section" id="about">
+                <div class="container">
+                    <h2>Преподаватель</h2>
+                    <div class="about-section-content">
+                        <picture>
+                            <source
+                                srcset="./images/about/teacher-desktop.jpg 1x, ./images/about/teacher-desktop@2x.jpg 2x"
+                                media="(min-width: 1366px)" />
+                            <source
+                                srcset="./images/about/teacher-tablet.jpg 1x, ./images/about/teacher-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source
+                                srcset="./images/about/teacher-mobile.jpg 1x, ./images/about/teacher-mobile@2x.jpg 2x"
+                                media="(min-width: 320px)" />
+                            <img src="./images/about/teacher-mobile.jpg"
+                                srcset="./images/about/teacher-mobile.jpg 1x, ./images/about/teacher-mobile@2x.jpg 2x"
+                                class="about-section-teacher" alt="Елена Морева">
+                        </picture>
+                        <div class="about-section-description">
+                            <h3>Елена Морева</h3>
+                            <ul>
+                                <li>Опыт подготовки учеников к ВНО - 6 лет</li>
+                                <li>Собственный результат сдачи ВНО - 197 баллов 2 года подряд</li>
+                                <li>Сдала на отлично международный аналог ВНО - Кембриджский PET (Preliminary English Test)</li>
+                            </ul>
+                            <p>Высшее образование получила в Институте международных отношений НАУ по специальности переводчик-аналитик.</p>
+                            <p>В свободное время проходит курсы от лучших университетов мира по эффективному преподаванию и методикам написания
+                                сочинений.</p>
+                                <p>В числе пройденных: English Grammar and Essay Writing (Berkeley), English Grammar&Style (The University of Queesland),
+                                    How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education),
+                                    Powerful Tools for Teaching and Learning (University of Houston).</p>
+                                    <a href="#" id="certificate-btn">Cambrige English Entry Level Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="guarantee-section">
+                <div class="container">
+                <h2>Мы гарантируем</h2>
+                    <div class="our-guarantees">
+                        <ul>
+                            <li><span>Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом пробном тестировании. Иначе мы вернем деньги.<span class="text-accent">*</span></span></li>
+                            <li><span>Ты научишься писать сочинения минимум на 10 баллов из 14. <span class="text-accent">В то время как 20% учеников получили за сочинение 0.</span></span></li>
+                            <li>Ты будешь заниматься в своем районе. Мы выберем место проведения занятий после формирования команд.</li>
+                            <li>Команды будут сформированы, исходя из начального уровня учеников. Мы учитываем особенности каждого ученика.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="empty"><h2>Reviews</h2></section>
+            <section class="empty"><h2>Contacts</h2></section>
+        </main>
+        <footer></footer>
+    <!-- MODAL -->
+
+    
+
+    <!-- CERTIFICATE MODAL -->
+        <div class="modal modal-area-bgd" id="certificate-modal">
+            <div class="container certificate-container modal-area-content">
+                <button type="button" class="modal-close-btn certificate-close-btn">
+                    <svg width="15" height="15">
+                        <use href="./images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <div class="scroll">
+                    <img src="./images/about/certificate.jpg"
+                    srcset="./images/about/certificate.jpg 1x, ./images/about/certificate@2x.jpg 2x" class="about-section-certificate"
+                    alt="Cambrige English Entry Level Certificate">
+                    <h3>Международный языковой сертификат Cambrige ESOL</h3>
+                    <p>Экзаменационный департамент Кембриджского Университета, который называется Cambridge ESOL (English for Speakers of Other
+                        Languages) является старейшей и наиболее авторитетной организацией, занимающейся экзаменами по английскому языку.</p>
+                        <p>Кембриджские экзамены проверяют уровень развития всех четырех языковых навыков (чтение, письмо, аудирование/понимание на
+                            слух и говорение) и разработаны с учетом Общеевропейской шкалы языковой компетенции (Common European Framework of
+                            Reference for Languages, CEFR) – международной системы определения уровня владения языком.</p>
+                </div>
+            </div>
+        </div>
+                    <!-- / CERTIFICATE MODAL -->
+    <script src="js/modal.js"></script>
+</body>
+</html>
