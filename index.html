@@ -29,10 +29,10 @@
                 </div>
                 <nav>
                     <ul class="navigation-links">
-                        <li><a href="#" class="navigation-links__link">Программа обучения</a></li>
+                        <li><a href="#program" class="navigation-links__link">Программа обучения</a></li>
                         <li><a href="#about" class="navigation-links__link">О нас</a></li>
-                        <li><a href="#" class="navigation-links__link">Варианты обучения</a></li>
-                        <li><a href="#" class="navigation-links__link">Контакты</a></li>
+                        <li><a href="#how-we-do" class="navigation-links__link">Варианты обучения</a></li>
+                        <li><a href="#contacts" class="navigation-links__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header-buttons">
@@ -69,10 +69,10 @@
                     <div class="mobile-menu__scroll-area">
                         <nav class="mobile-menu-items">
                             <ul>
-                                <li><a href="#" class="mobile-menu-item">Программа обучения</a></li>
+                                <li><a href="#program" class="mobile-menu-item">Программа обучения</a></li>
                                 <li><a href="#about" class="mobile-menu-item">О нас</a></li>
-                                <li><a href="#" class="mobile-menu-item">Варианты обучения</a></li>
-                                <li><a href="#" class="mobile-menu-item">Контакты</a></li>
+                                <li><a href="#how-we-do" class="mobile-menu-item">Варианты обучения</a></li>
+                                <li><a href="#contacts" class="mobile-menu-item">Контакты</a></li>
                             </ul>
                         </nav>
                         <button type="button" class="consultation-button">Консультация по телефону</button>
@@ -90,7 +90,7 @@
             <section class="empty"><h2>Benefits</h2></section>
             <section class="about-section" id="about">
                 <div class="container">
-                    <h2>Преподаватель</h2>
+                    <h2 class="about-section__heading">Преподаватель</h2>
                     <div class="about-section__content">
                         <picture>
                             <source
@@ -126,13 +126,13 @@
             </section>
             <section class="guarantee-section">
                 <div class="container">
-                <h2>Мы гарантируем</h2>
+                <h2 class="guarantee-section__heading">Мы гарантируем</h2>
                     <div class="guarantee-section__our-guarantees">
-                        <ul>
-                            <li><span>Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом пробном тестировании. Иначе мы вернем деньги.<span class="text-accent">*</span></span></li>
-                            <li><span>Ты научишься писать сочинения минимум на 10 баллов из 14. <span class="text-accent">В то время как 20% учеников получили за сочинение 0.</span></span></li>
-                            <li>Ты будешь заниматься в своем районе. Мы выберем место проведения занятий после формирования команд.</li>
-                            <li>Команды будут сформированы, исходя из начального уровня учеников. Мы учитываем особенности каждого ученика.</li>
+                        <ul class="guarantee-section__guarantee-list">
+                            <li class="guarantee-section__item"><span>Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом пробном тестировании. Иначе мы вернем деньги.<span class="text-accent">*</span></span></li>
+                            <li class="guarantee-section__item"><span>Ты научишься писать сочинения минимум на 10 баллов из 14. <span class="text-accent">В то время как 20% учеников получили за сочинение 0.</span></span></li>
+                            <li class="guarantee-section__item">Ты будешь заниматься в своем районе. Мы выберем место проведения занятий после формирования команд.</li>
+                            <li class="guarantee-section__item">Команды будут сформированы, исходя из начального уровня учеников. Мы учитываем особенности каждого ученика.</li>
                         </ul>
                     </div>
                 </div>
@@ -177,34 +177,12 @@
                     <form class="contact-form">
                         <h3>Оставьте свои данные, мы вам перезвоним</h3>
                         <label for="name">Имя</label>
-                        <div class="input-wrapper">
-                            <svg width="18" height="18" class="input-wrapper-icon">
-                                <use href="./images/all-pages-icons.svg#user-name"></use>
-                            </svg>
-                            <input type="text" class="contact-form-input" name="name" id="name" pattern="[А-Яа-яA-Za-z]{2,}" required>
-                        </div>
+                        <input type="text" class="contact-form__input" name="name" id="name" pattern="[А-Яа-яA-Za-z]{2,}" required>
                         <label for="phone">Телефон</label>
-                        <div class="input-wrapper">
-                            <svg width="18" height="18" class="input-wrapper-icon">
-                                <use href="./images/all-pages-icons.svg#user-phone"></use>
-                            </svg>
-                            <input type="tel" class="contact-form-input" name="phone" id="phone" required>
-                        </div>
-                        <label for="email">Почта</label>
-                        <div class="input-wrapper">
-                            <svg width="18" height="18" class="input-wrapper-icon">
-                                <use href="./images/all-pages-icons.svg#user-email"></use>
-                            </svg>
-                            <input type="email" class="contact-form-input" name="email" id="email" required>
-                        </div>
+                        <input type="tel" class="contact-form__input" name="phone" id="phone" required>
                         <label for="comment">Комментарий</label>
-                        <textarea name="comment" class="contact-form-textarea" id="comment" placeholder="Введите текст"></textarea>
-                        <div class="accept-policy">
-                            <input type="checkbox" name="policy" id="policy" value="accepted" class="accept-policy-checkbox" required>
-                            <label class="accept-policy-label" for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
-                                    договора</a></label>
-                        </div>
-                        <button type="submit" class="button contact-form-submit">Отправить</button>
+                        <textarea name="comment" class="contact-form__textarea" id="comment" placeholder="Введите текст"></textarea>
+                        <button type="submit" class="button contact-form__submit">Жду звонка</button>
                     </form>
                 </div>
             </div>
