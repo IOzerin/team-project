@@ -1,3 +1,4 @@
+/* --- HEADER --- */
 header {
   padding-top: 30px;
 
@@ -7,14 +8,14 @@ header {
     justify-content: space-between;
   }
 
-  .navigation-links-list {
+  .navigation-links {
     display: none;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.21;
 
-    .navigation-link {
+    .navigation-links__link {
       text-decoration: none;
       text-transform: uppercase;
       color: $color-text-light;
@@ -52,7 +53,7 @@ header {
     }
   }
 
-  .open-modal-btn {
+  .header-buttons__open-modal {
     background: unset;
     border: none;
     height: 18px;
@@ -75,7 +76,7 @@ header {
   align-items: center;
   width: 80;
 
-  .first-lane {
+  .logo__first-lane {
     display: flex;
     align-items: center;
     font-family: Montserrat;
@@ -101,7 +102,7 @@ header {
     }
   }
 
-  .second-lane {
+  .logo__second-lane {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -112,6 +113,14 @@ header {
 
     @media screen and (min-width: $tablet) {
       font-size: 8px;
+    }
+  }
+
+  .text-accent {
+    color: $color-dark;
+
+    @media screen and (min-width: $tablet) {
+      color: $color-accent;
     }
   }
 }
@@ -125,3 +134,4 @@ header {
   border: 2px solid $color-accent;
   padding: 0;
 }
+/* --- /HEADER --- */

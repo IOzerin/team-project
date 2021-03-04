@@ -16,48 +16,48 @@
         <header>
             <div class="container">
                 <div class="logo">
-                    <span class="first-lane">
+                    <span class="logo__first-lane">
                         Hell
                         <svg>
                             <use href="./images/sprite.svg#fire"></use>
                         </svg>
                         EN
                     </span>
-                    <span class="second-lane">
-                        <span>Адский</span> английский
+                    <span class="logo__second-lane">
+                        <span class="text-accent">Адский</span> английский
                     </span>
                 </div>
                 <nav>
-                    <ul class="navigation-links-list">
-                        <li><a href="#" class="navigation-link">Программа обучения</a></li>
-                        <li><a href="#about" class="navigation-link">О нас</a></li>
-                        <li><a href="#" class="navigation-link">Варианты обучения</a></li>
-                        <li><a href="#" class="navigation-link">Контакты</a></li>
+                    <ul class="navigation-links">
+                        <li><a href="#" class="navigation-links__link">Программа обучения</a></li>
+                        <li><a href="#about" class="navigation-links__link">О нас</a></li>
+                        <li><a href="#" class="navigation-links__link">Варианты обучения</a></li>
+                        <li><a href="#" class="navigation-links__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header-buttons">
-                    <button type="button" class="consultation-button">Консультация по телефону</button>
-                    <button type="button" class="open-modal-btn" id="mobile-menu-btn">
+                    <button type="button" class="consultation-button" id="consultation-btn">Консультация по телефону</button>
+                    <button type="button" class="header-buttons__open-modal" id="mobile-menu-btn">
                         <svg width="21" height="18">
                             <use href="./images/sprite.svg#menu"></use>
                         </svg>
                     </button>
                 </div>
             </div>
-            <!-- MOBILE MENU -->
-            <div class="modal modal-mobile-menu" id="mobile-menu">
-                <div class="container mobile-menu-container">
-                    <div class="mobile-menu-header">
+        <!-- MOBILE MENU -->
+            <div class="modal mobile-menu" id="mobile-menu">
+                <div class="container">
+                    <div class="mobile-menu__header">
                         <div class="logo mobile-menu-logo">
-                            <span class="first-lane">
+                            <span class="logo__first-lane">
                                 Hell
                                 <svg width="13.93" height="19.38">
                                     <use href="./images/sprite.svg#fire"></use>
                                 </svg>
                                 EN
                             </span>
-                            <span class="second-lane">
-                                <span>Адский</span> английский
+                            <span class="logo__second-lane">
+                                <span class="text-accent">Адский</span> английский
                             </span>
                         </div>
                         <button type="button" class="modal-close-btn">
@@ -66,18 +66,20 @@
                             </svg>
                         </button>
                     </div>
-                    <nav class="mobile-menu-items">
-                        <ul>
-                            <li><a href="#" class="mobile-menu-item">Программа обучения</a></li>
-                            <li><a href="#about" class="mobile-menu-item">О нас</a></li>
-                            <li><a href="#" class="mobile-menu-item">Варианты обучения</a></li>
-                            <li><a href="#" class="mobile-menu-item">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <button type="button" class="consultation-button">Консультация по телефону</button>
+                    <div class="mobile-menu__scroll-area">
+                        <nav class="mobile-menu-items">
+                            <ul>
+                                <li><a href="#" class="mobile-menu-item">Программа обучения</a></li>
+                                <li><a href="#about" class="mobile-menu-item">О нас</a></li>
+                                <li><a href="#" class="mobile-menu-item">Варианты обучения</a></li>
+                                <li><a href="#" class="mobile-menu-item">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <button type="button" class="consultation-button">Консультация по телефону</button>
+                    </div>
                 </div>
             </div>
-            <!-- / MOBILE MENU -->
+        <!-- / MOBILE MENU -->
         </header>
         <main>
             <section class="empty"><h2>Hero</h2></section>
@@ -89,7 +91,7 @@
             <section class="about-section" id="about">
                 <div class="container">
                     <h2>Преподаватель</h2>
-                    <div class="about-section-content">
+                    <div class="about-section__content">
                         <picture>
                             <source
                                 srcset="./images/about/teacher-desktop.jpg 1x, ./images/about/teacher-desktop@2x.jpg 2x"
@@ -102,9 +104,9 @@
                                 media="(min-width: 320px)" />
                             <img src="./images/about/teacher-mobile.jpg"
                                 srcset="./images/about/teacher-mobile.jpg 1x, ./images/about/teacher-mobile@2x.jpg 2x"
-                                class="about-section-teacher" alt="Елена Морева">
+                                class="about-section__teacher" alt="Елена Морева">
                         </picture>
-                        <div class="about-section-description">
+                        <div class="about-section__description">
                             <h3>Елена Морева</h3>
                             <ul>
                                 <li>Опыт подготовки учеников к ВНО - 6 лет</li>
@@ -125,7 +127,7 @@
             <section class="guarantee-section">
                 <div class="container">
                 <h2>Мы гарантируем</h2>
-                    <div class="our-guarantees">
+                    <div class="guarantee-section__our-guarantees">
                         <ul>
                             <li><span>Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом пробном тестировании. Иначе мы вернем деньги.<span class="text-accent">*</span></span></li>
                             <li><span>Ты научишься писать сочинения минимум на 10 баллов из 14. <span class="text-accent">В то время как 20% учеников получили за сочинение 0.</span></span></li>
@@ -141,17 +143,15 @@
         <footer></footer>
     <!-- MODAL -->
 
-    
-
     <!-- CERTIFICATE MODAL -->
-        <div class="modal modal-area-bgd" id="certificate-modal">
-            <div class="container certificate-container modal-area-content">
-                <button type="button" class="modal-close-btn certificate-close-btn">
+        <div class="modal certificate-modal modal-area-bgd" id="certificate-modal">
+            <div class="container modal-area-content">
+                <button type="button" class="certificate-modal__close-button modal-close-btn">
                     <svg width="15" height="15">
                         <use href="./images/sprite.svg#close"></use>
                     </svg>
                 </button>
-                <div class="scroll">
+                <div class="certificate-modal__scroll-area">
                     <img src="./images/about/certificate.jpg"
                     srcset="./images/about/certificate.jpg 1x, ./images/about/certificate@2x.jpg 2x" class="about-section-certificate"
                     alt="Cambrige English Entry Level Certificate">
@@ -164,7 +164,52 @@
                 </div>
             </div>
         </div>
-                    <!-- / CERTIFICATE MODAL -->
+    <!-- / CERTIFICATE MODAL -->
+    <!-- CONSULTATION MODAL -->
+        <div class="modal consultation-modal modal-area-bgd" id="consultation-modal">
+            <div class="container modal-area-content">
+                <button type="button" class="consultation-modal__close-button modal-close-btn">
+                    <svg width="15" height="15">
+                        <use href="./images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <div class="consultation-modal__scroll-area">
+                    <form class="contact-form">
+                        <h3>Оставьте свои данные, мы вам перезвоним</h3>
+                        <label for="name">Имя</label>
+                        <div class="input-wrapper">
+                            <svg width="18" height="18" class="input-wrapper-icon">
+                                <use href="./images/all-pages-icons.svg#user-name"></use>
+                            </svg>
+                            <input type="text" class="contact-form-input" name="name" id="name" pattern="[А-Яа-яA-Za-z]{2,}" required>
+                        </div>
+                        <label for="phone">Телефон</label>
+                        <div class="input-wrapper">
+                            <svg width="18" height="18" class="input-wrapper-icon">
+                                <use href="./images/all-pages-icons.svg#user-phone"></use>
+                            </svg>
+                            <input type="tel" class="contact-form-input" name="phone" id="phone" required>
+                        </div>
+                        <label for="email">Почта</label>
+                        <div class="input-wrapper">
+                            <svg width="18" height="18" class="input-wrapper-icon">
+                                <use href="./images/all-pages-icons.svg#user-email"></use>
+                            </svg>
+                            <input type="email" class="contact-form-input" name="email" id="email" required>
+                        </div>
+                        <label for="comment">Комментарий</label>
+                        <textarea name="comment" class="contact-form-textarea" id="comment" placeholder="Введите текст"></textarea>
+                        <div class="accept-policy">
+                            <input type="checkbox" name="policy" id="policy" value="accepted" class="accept-policy-checkbox" required>
+                            <label class="accept-policy-label" for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
+                                    договора</a></label>
+                        </div>
+                        <button type="submit" class="button contact-form-submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!-- / CONSULTATION MODAL -->
     <script src="js/modal.js"></script>
 </body>
 </html>

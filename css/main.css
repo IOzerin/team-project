@@ -51,7 +51,7 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -96,6 +96,7 @@ img {
   display: none;
 }
 
+/* --- HEADER --- */
 header {
   padding-top: 30px;
 }
@@ -106,7 +107,7 @@ header .container {
   justify-content: space-between;
 }
 
-header .navigation-links-list {
+header .navigation-links {
   display: none;
   font-family: Montserrat;
   font-weight: bold;
@@ -114,22 +115,22 @@ header .navigation-links-list {
   line-height: 1.21;
 }
 
-header .navigation-links-list .navigation-link {
+header .navigation-links .navigation-links__link {
   text-decoration: none;
   text-transform: uppercase;
   color: #b9b9b9;
 }
 
-header .navigation-links-list .navigation-link:hover, header .navigation-links-list .navigation-link:focus {
+header .navigation-links .navigation-links__link:hover, header .navigation-links .navigation-links__link:focus {
   color: #ff6b09;
 }
 
-header .navigation-links-list li:not(:last-child) {
+header .navigation-links li:not(:last-child) {
   margin-right: 40px;
 }
 
 @media screen and (min-width: 1366px) {
-  header .navigation-links-list {
+  header .navigation-links {
     display: flex;
   }
 }
@@ -156,7 +157,7 @@ header .consultation-button {
   }
 }
 
-header .open-modal-btn {
+header .header-buttons__open-modal {
   background: unset;
   border: none;
   height: 18px;
@@ -165,7 +166,7 @@ header .open-modal-btn {
 }
 
 @media screen and (min-width: 1366px) {
-  header .open-modal-btn {
+  header .header-buttons__open-modal {
     display: none;
   }
 }
@@ -183,7 +184,7 @@ header .open-modal-btn {
   width: 80;
 }
 
-.logo .first-lane {
+.logo .logo__first-lane {
   display: flex;
   align-items: center;
   font-family: Montserrat;
@@ -194,26 +195,26 @@ header .open-modal-btn {
   letter-spacing: 0.04em;
 }
 
-.logo .first-lane svg {
+.logo .logo__first-lane svg {
   width: 14px;
   height: 19px;
   margin: 0 4px 4px 4px;
 }
 
 @media screen and (min-width: 768px) {
-  .logo .first-lane svg {
+  .logo .logo__first-lane svg {
     width: 22px;
     height: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .logo .first-lane {
+  .logo .logo__first-lane {
     font-size: 26px;
   }
 }
 
-.logo .second-lane {
+.logo .logo__second-lane {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -224,8 +225,18 @@ header .open-modal-btn {
 }
 
 @media screen and (min-width: 768px) {
-  .logo .second-lane {
+  .logo .logo__second-lane {
     font-size: 8px;
+  }
+}
+
+.logo .text-accent {
+  color: #111518;
+}
+
+@media screen and (min-width: 768px) {
+  .logo .text-accent {
+    color: #ff6b09;
   }
 }
 
@@ -239,6 +250,8 @@ header .open-modal-btn {
   padding: 0;
 }
 
+/* --- /HEADER --- */
+/* --- ABOUT --- */
 .about-section {
   padding-top: 39px;
 }
@@ -345,25 +358,26 @@ header .open-modal-btn {
   }
 }
 
-.container .about-section-content {
+.container .about-section__content {
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-  .container .about-section-content {
+  .container .about-section__content {
     flex-direction: row;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container .about-section-description {
+  .container .about-section__description {
+    width: 401px;
     margin-left: 40px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .container .about-section-description {
+  .container .about-section__description {
     width: 638px;
   }
 }
@@ -399,6 +413,8 @@ header .open-modal-btn {
   }
 }
 
+/* --- /ABOUT --- */
+/* --- GUARANTEE --- */
 .guarantee-section {
   padding-top: 50px;
 }
@@ -439,20 +455,20 @@ header .open-modal-btn {
   }
 }
 
-.our-guarantees {
+.guarantee-section__our-guarantees {
   display: flex;
   width: 100%;
   background: #f1f1f1;
   padding: 30px 20px 30px 27px;
 }
 
-.our-guarantees ul {
+.guarantee-section__our-guarantees ul {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 
-.our-guarantees li {
+.guarantee-section__our-guarantees li {
   width: 273px;
   font-weight: normal;
   font-size: 12px;
@@ -462,18 +478,18 @@ header .open-modal-btn {
   padding-left: 28px;
 }
 
-.our-guarantees li:not(:last-child) {
+.guarantee-section__our-guarantees li:not(:last-child) {
   padding-bottom: 28px;
   border-left: 1px dashed #b9b9b9;
 }
 
 @media screen and (min-width: 768px) {
-  .our-guarantees li:not(:last-child) {
+  .guarantee-section__our-guarantees li:not(:last-child) {
     padding-bottom: 20px;
   }
 }
 
-.our-guarantees li::before {
+.guarantee-section__our-guarantees li::before {
   content: "";
   display: flex;
   width: 15px;
@@ -486,7 +502,7 @@ header .open-modal-btn {
 }
 
 @media screen and (min-width: 1366px) {
-  .our-guarantees li::before {
+  .guarantee-section__our-guarantees li::before {
     width: 22px;
     height: 30px;
     left: -11px;
@@ -494,14 +510,14 @@ header .open-modal-btn {
 }
 
 @media screen and (min-width: 768px) {
-  .our-guarantees li {
+  .guarantee-section__our-guarantees li {
     width: 520px;
     padding-left: 32px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .our-guarantees li {
+  .guarantee-section__our-guarantees li {
     font-size: 20px;
     line-height: 1.4;
     width: 1079px;
@@ -509,6 +525,8 @@ header .open-modal-btn {
   }
 }
 
+/* --- GUARANTEE --- */
+/* --- MODAL --- */
 .modal {
   position: fixed;
   top: 0;
@@ -522,32 +540,51 @@ header .open-modal-btn {
   z-index: 2;
 }
 
-.modal-mobile-menu {
+/* --- MOBILE MENU --- */
+.mobile-menu {
   padding: 30px 0;
 }
 
-.modal-mobile-menu .container {
+.mobile-menu .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-.modal-mobile-menu .container .mobile-menu-header {
+.mobile-menu .container .mobile-menu__header {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.mobile-menu .container .consultation-button {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
-  .modal-mobile-menu .container .consultation-button {
+  .mobile-menu .container .consultation-button {
     display: none;
   }
 }
 
+.mobile-menu .mobile-menu__scroll-area {
+  overflow-y: auto;
+}
+
+.mobile-menu .logo .text-accent {
+  color: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
-  .modal-mobile-menu {
+  .mobile-menu .logo .text-accent {
+    color: #ff6b09;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
     padding: 42px 0;
   }
 }
@@ -592,6 +629,10 @@ header .open-modal-btn {
   }
 }
 
+.modal-close-btn svg {
+  fill: #ffffff;
+}
+
 .mobile-menu-items {
   width: 100%;
   margin: 50px 0;
@@ -629,14 +670,15 @@ header .open-modal-btn {
   }
 }
 
-/* CERTIFICATE MODAL */
-.modal-area-bgd {
+/* --- /MOBILE MENU --- */
+/* --- CERTIFICATE MODAL --- */
+.certificate-modal {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.certificate-container {
+.certificate-modal .container {
   position: relative;
   width: 85%;
   height: 85%;
@@ -647,7 +689,7 @@ header .open-modal-btn {
   box-sizing: border-box;
 }
 
-.certificate-container .scroll {
+.certificate-modal .container .certificate-modal__scroll-area {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -656,49 +698,50 @@ header .open-modal-btn {
 }
 
 @media screen and (min-width: 768px) {
-  .certificate-container .scroll {
+  .certificate-modal .container .certificate-modal__scroll-area {
     padding: 0 40px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .certificate-container .scroll {
+  .certificate-modal .container .certificate-modal__scroll-area {
     padding: 0 80px;
   }
 }
 
-.certificate-container img {
+.certificate-modal .container img {
   align-self: center;
   width: 240px;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .certificate-container img {
+  .certificate-modal .container img {
     width: 380px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .certificate-container img {
+  .certificate-modal .container img {
     width: 640px;
   }
 }
 
-.certificate-close-btn {
+.certificate-modal__close-button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 21px;
   height: 21px;
-  background: #ff6b09;
-  border-radius: 50%;
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-.certificate-close-btn svg {
-  fill: black;
+.certificate-modal__close-button svg {
+  fill: #ff6b09;
 }
+
+/* --- /CERTIFICATE MODAL --- */
+/* --- /MODAL --- */
 /*# sourceMappingURL=main.css.map */

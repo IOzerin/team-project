@@ -1,8 +1,11 @@
 const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
 const CertificateBtn = document.querySelector('#certificate-btn');
+const ConsultationBtn = document.querySelector('.consultation-button');
 
-const CertificateModal = document.querySelector('#certificate-modal');
 const mobileMenu = document.querySelector('#mobile-menu');
+const CertificateModal = document.querySelector('#certificate-modal');
+const ConsultationModal = document.querySelector('#consultation-modal');
+
 
 const modalCloseBtns = document.querySelectorAll('.modal-close-btn');
 
@@ -15,8 +18,8 @@ const BODY_SCROLL_DISABLE_CLASS = 'body-scroll-disable';
 enableCloseModalOnBgdClick();
 hideModalOnMobileMenuElementsClick();
 
-const modals = [mobileMenu, CertificateModal];
-const buttons = [mobileMenuBtn, CertificateBtn];
+const modals = [mobileMenu, CertificateModal, ConsultationModal];
+const buttons = [mobileMenuBtn, CertificateBtn, ConsultationBtn];
 
 buttons.forEach((btn, index) => {
     const projectModal = modals[index];
