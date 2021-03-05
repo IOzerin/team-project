@@ -43,7 +43,7 @@
 
   .logo {
     .text-accent {
-      color: $color-with;
+      color: $color-white;
 
       @media screen and (min-width: $tablet) {
         color: $color-accent;
@@ -68,7 +68,7 @@
 .mobile-menu-logo {
   top: 30px;
   left: 20px;
-  color: $color-with;
+  color: $color-white;
 
   @media screen and (min-width: $tablet) {
     top: 42px;
@@ -92,7 +92,7 @@
   }
 
   svg {
-    fill: $color-with;
+    fill: $color-white;
   }
 }
 
@@ -110,7 +110,7 @@
       font-size: 20px;
       line-height: 1.8;
       letter-spacing: 0.03em;
-      color: $color-with;
+      color: $color-white;
       text-decoration: none;
 
       &:hover,
@@ -144,7 +144,7 @@
     justify-content: center;
     box-sizing: border-box;
     padding: 45px 0;
-    background: $color-with;
+    background: $color-white;
     box-sizing: border-box;
 
     .certificate-modal__scroll-area {
@@ -209,7 +209,7 @@
     // padding: 45px 0;
     padding-top: 45px;
     padding-bottom: 45px;
-    background: $color-with;
+    background: $color-white;
     box-sizing: border-box;
 
     @media screen and (min-width: $tablet) {
